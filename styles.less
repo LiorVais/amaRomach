@@ -1,26 +1,51 @@
+@cart-amount-color:   #ff7f00;
+@border-color: #606a76;
+
 #menu-grid {
-  .column {
+  .no-bottom-padding {
     padding-bottom: 0;
   }
 
-  h3 {
+  .ui.medium.header {
     margin-bottom: 0;
   }
 
-  #cart-container {
-    font-weight: 700;
-    font-size: 16px;
-    cursor: pointer;
+  .custom-border {
+    border: 1px solid transparent;
+    &:hover {
+      border: 1px solid @border-color;
+    }
   }
 
-  #cart-number {
-    color: #ff7f00;
+  #accounts-text {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  #cart-container {
+    cursor: pointer;
+    width: fit-content;
+    display: flex;
+
+    #cart-symbols {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      #cart-amount {
+        color: @cart-amount-color;
+      }
+    }
+
+    #cart-text {
+      margin-top: auto;
+    }
   }
 }
 
 .ui.card {
   .image {
-    background: white;
+    background: #ffffff;
   }
 
   .description {

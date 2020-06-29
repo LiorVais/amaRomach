@@ -16,13 +16,13 @@
     <script src="main.js"></script>
 
     <div class="ui padded grid">
-        <div class="four column row black">
+        <div class="row black">
             <div class="two wide column">
                 <a href="/" class="ui image">
                     <img src="images/white_logo.png">
                 </a>
             </div>
-            <div class="bottom aligned seven wide column">
+            <div class="seven wide column bottom aligned">
                 <div class="ui fluid action input">
                     <input type="text" placeholder="Search...">
                     <button class="ui icon primary button">
@@ -31,27 +31,27 @@
                 </div>
             </div>
         </div>
-        <div class="five column row black">
+        <div class="four column row black">
             <div class="right floated column">
                 <div id="menu-grid" class="ui grid">
-                    <div class="eight wide column bottom aligned">
+                    <div class="eight wide column bottom aligned no-bottom-padding">
                         <div class="ui floating dropdown right floated">
-                            <h3 class="ui header inverted">
-                                <div class="text">Account&Lists
+                            <div class="ui medium header inverted">
+                                <div id="accounts-text" class="text custom-border">Account&Lists
                                     <i class="dropdown icon"></i>
                                 </div>
-                            </h3>
+                            </div>
                             <div class="ui menu two column relaxed divided grid transition hidden">
-                                <div class="row">
+                                <div class="two column row">
                                     <div class="column">
-                                        <h4 class="ui header">Your Account</h4>
+                                        <div class="ui small header">Your Account</div>
                                         <div class="ui link list">
                                             <a class="item">SIGN IP</a>
                                             <a class="item">SIGN UP</a>
                                         </div>
                                     </div>
                                     <div class="column">
-                                        <h4 class="ui header">Your Lists</h4>
+                                        <div class="ui small header">Your Lists</div>
                                         <div class="ui link list">
                                             <a class="item">Create New List</a>
                                         </div>
@@ -60,13 +60,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="six wide column bottom aligned">
-                        <div id="cart-container">
-                            <span id="cart-number">(2)</span>
-                            <div>
+                    <div class="six wide column bottom aligned no-bottom-padding">
+                        <div id="cart-container" class="ui medium header inverted custom-border">
+                            <div id="cart-symbols">
+                                <span id="cart-amount">(2)</span>
                                 <i class="large shopping cart icon"></i>
-                                cart
                             </div>
+                            <div id="cart-text">cart</div>
                         </div>
                     </div>
                 </div>
