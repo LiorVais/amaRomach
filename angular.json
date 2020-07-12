@@ -28,9 +28,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.less"
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+              "src/styles.less",
+              "semantic/dist/semantic.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "semantic/dist/semantic.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -92,9 +96,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.less"
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+              "src/styles.less",
+              "semantic/dist/semantic.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "semantic/dist/semantic.min.js"
+            ]
           }
         },
         "lint": {
@@ -123,6 +131,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "amaRomach"
 }
